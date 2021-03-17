@@ -1,0 +1,20 @@
+version: '3'
+services:
+  linux:
+    image: amazonlinux
+    environment:
+      LANG: C.UTF-8
+    working_dir: /var/www/app
+    volumes:
+      - ./work:/var/www/app
+    tty: true
+  nginx:
+    image: nginx
+    volumes:
+    - ./nginx:/var/www/html
+    - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+    - "8080:80"
+    environment:
+    - NGINX_HOST=localhost
+    - NGINX_PORT=80
