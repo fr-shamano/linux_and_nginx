@@ -23,3 +23,10 @@ http://localhost:8080
 
 ### 作業フォルダ
 `./work`
+
+## linuxコマンド資料
+[linuxコマンドについて](docs/linux_command.md)
+
+[linuxコマンドについての練習問題](docs/linux_question.md)
+
+[linuxコマンドについての練習問題の解説](docs/linux_question.md)
